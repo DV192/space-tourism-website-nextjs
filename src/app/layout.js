@@ -14,13 +14,15 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png"></link>
+      <title>Frontend Mentor | Space tourism website</title>
       <body>
-        <main className={`${page}-bg main`}>
+        <div className={`${page}-bg main`}>
           {/* <NextUIProvider> */}
             <CustomNavbar setPage={setPage} />
             {children}
           {/* </NextUIProvider> */}
-        </main>
+        </div>
       </body>
     </html>
   )

@@ -87,15 +87,13 @@ export default function CustomNavbar(props) {
         ],
       }}
     >
-      <NavbarContent>
-        <NavbarBrand className={`${styles.navbar_brand}`}>
-          <Image
-            className={`${styles.logo_img}`}
-            src={Logo}
-            alt="logo-image"
-          />
-        </NavbarBrand>
-      </NavbarContent>
+      <NavbarBrand className={`${styles.navbar_brand}`}>
+        <Image
+          className={`${styles.logo_img}`}
+          src={Logo}
+          alt="logo-image"
+        />
+      </NavbarBrand>
 
       <div className={`${styles.horizontal_line}`}></div>
 
