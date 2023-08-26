@@ -1,0 +1,171 @@
+.crew_main {
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 28px;
+  text-transform: uppercase;
+  padding: 50px 150px;
+}
+
+.title_no {
+  font-weight: bold;
+  color: rgba(255 255 255 / 0.25);
+  padding-right: 15px;
+}
+
+.content_img_component {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'crew_content crew_img_component';
+  padding: 0px 150px;
+}
+
+.crew_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  padding-right: 0px;
+  justify-content: space-between;
+  grid-area: crew_content;
+}
+
+.role {
+  font-size: 32px;
+  color: white;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.name {
+  font-size: 56px;
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.bio {
+  font-size: 18px;
+  color: #D0D6F9;
+}
+
+.pagination_component {
+  display: flex;
+  padding: 0;
+}
+
+.circular_pagination {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(255 255 255 / 0.17);
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.circular_pagination:hover {
+  background-color: rgba(255 255 255 / 0.5);
+}
+
+.circular_pagination.active {
+  background-color: rgba(255 255 255 / 1);
+}
+
+.crew_img_component {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  grid-area: crew_img_component;
+}
+
+.crew_img {
+  width: auto;
+  height: 520px;
+}
+
+@media screen and (max-width: 45rem) {
+  .content_img_component {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'crew_content'
+      'crew_img_component';
+    padding: 0 60px;
+  }
+
+  .title {
+    font-size: 20px;
+    padding: 60px;
+  }
+
+  .crew_content {
+    padding-bottom: 30px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .role {
+    font-size: 24px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .bio {
+    font-size: 16px;
+  }
+
+  .pagination_component {
+    padding: 30px 0;
+  }
+
+  .crew_img {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .content_img_component {
+    grid-template-rows: max-content;
+    grid-template-areas:
+      'crew_img_component'
+      'crew_content';
+    padding: 0 30px;
+  }
+
+  .title {
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .crew_content {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
+  .role {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .bio {
+    font-size: 15px;
+  }
+
+  .crew_img_component {
+    border-bottom: 1px solid #383B4B;
+  }
+
+  .crew_img {
+    height: 250px;
+  }
+}

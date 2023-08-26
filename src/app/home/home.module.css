@@ -1,0 +1,139 @@
+.home_main {
+  /* margin-top: auto; */
+  display: grid;
+  padding: 150px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.home_text_component {
+  color: white;
+}
+
+.home_sub_title {
+  font-size: 28px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+
+.home_title {
+  font-size: 150px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.home_para {
+  font-size: 18px;
+  color: #D0D6F9;
+}
+
+.explore_component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: auto;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.white_explore {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: white;
+  border-radius: 50%;
+  color: #0B0D17;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.white_explore::after {
+  content: '';
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255 255 255 / 0.1);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+
+.white_explore:hover::after {
+  content: '';
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255 255 255 / 0.1);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (max-width: 45rem) {
+  .home_main {
+    grid-template-columns: 1fr;
+    padding: 60px;
+  }
+
+  .home_text_component {
+    text-align: center;
+  }
+
+  .home_sub_title {
+    font-size: 20px;
+  }
+
+  .home_para {
+    font-size: 16px;
+  }
+
+  .explore_component {
+    justify-content: center;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .home_main {
+    padding: 30px;
+  }
+
+  .home_sub_title {
+    font-size: 16px;
+  }
+
+  .home_title {
+    font-size: 80px;
+  }
+
+  .home_para {
+    font-size: 15px;
+  }
+
+  .white_explore {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+  }
+
+  .white_explore::after {
+    width: 150px;
+    height: 150px;
+  }
+
+  .white_explore:hover::after {
+    width: 200px;
+    height: 200px;
+  }
+}

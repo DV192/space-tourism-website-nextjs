@@ -1,0 +1,152 @@
+.destination_main {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 28px;
+  text-transform: uppercase;
+  padding: 50px 150px;
+}
+
+.title_no {
+  font-weight: bold;
+  color: rgba(255 255 255 / 0.25);
+  padding-right: 15px;
+}
+
+.destination_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0px 150px;
+}
+
+.planet_img_component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet_img {
+  width: 350px;
+}
+
+.details_component {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs_component {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  font-size: 16px;
+  color: #D0D6F9;
+  padding: 7px 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.tab:hover {
+  border-bottom: 3px solid rgba(255 255 255 / 0.5);
+}
+
+.tab.active {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.name {
+  font-size: 100px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 18px;
+  color: #D0D6F9;
+}
+
+.divider {
+  background-color: #383B4B;
+}
+
+.distance_travel_component {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dist_trv_title {
+  font-size: 14px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+
+.dist_trv_value {
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 45rem) {
+  .title {
+    font-size: 20px;
+    padding: 60px;
+  }
+
+  .destination_content {
+    grid-template-columns: 1fr;
+    padding: 0px 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .planet_img {
+    width: 270px;
+  }
+
+  .details_component {
+    align-items: center;
+    text-align: center;
+  }
+
+  .name {
+    font-size: 80px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 35rem) {
+  .title {
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .planet_img {
+    width: 150px;
+  }
+
+  .name {
+    font-size: 56px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .distance_travel_component {
+    grid-template-columns: 1fr;
+  }
+}

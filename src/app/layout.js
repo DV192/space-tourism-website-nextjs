@@ -1,7 +1,8 @@
+'use client'
+import { useState } from 'react';
+import CustomNavbar from '@/components/navbar'
+// import { NextUIProvider } from "@nextui-org/react";
 import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -9,9 +10,18 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const [page, setPage] = useState('');
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <main className={`${page}-bg main`}>
+          {/* <NextUIProvider> */}
+            <CustomNavbar setPage={setPage} />
+            {children}
+          {/* </NextUIProvider> */}
+        </main>
+      </body>
     </html>
   )
 }
