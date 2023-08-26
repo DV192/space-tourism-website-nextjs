@@ -38,7 +38,7 @@ export default function Technology() {
   return (
     <main className={styles.technology_main}>
       <p className={`${barlowCondensed.className} ${styles.title}`}>
-        <span className={`${styles.title_no}`}>03</span> Space Launce 101
+        <span className={`${styles.title_no}`}>03</span> Space Launch 101
       </p>
 
       <div className={`${styles.technology_content} items-center`}>

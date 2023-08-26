@@ -36,7 +36,7 @@ export default function CustomNavbar(props) {
     })
 
     setNavItem(temp);
-  }, []);
+  }, [pathname]);
 
   const ImageIconClose = () => {
     return (

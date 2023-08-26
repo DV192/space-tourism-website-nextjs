@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { bellefair, barlow, barlowCondensed } from '@/app/font'
 import styles from './home.module.css'
 
@@ -15,7 +16,10 @@ export default function Home() {
       </div>
 
       <div className={`${styles.explore_component}`}>
-        <div className={`${bellefair.className} ${styles.white_explore}`}>Explore</div>
+        <Link className={`${bellefair.className} ${styles.white_explore}`}
+        href='destination'>
+          Explore
+        </Link>
       </div>
     </main>
   )
